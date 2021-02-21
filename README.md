@@ -2,4 +2,4 @@
 <p>Prática de codificação em Python.</p>
 <p>Durante os execícios, fui melhorando os códigos contando com meus conhecimentos prévios de programação</p>
 <hr/>
-<p>OBS: o script ex021.py necessita do arquivo mp3 ex021.mp3 para funcionar</p>
+<p>OBS: o script <i>ex021.py</i> necessita do arquivo mp3 <i>ex021.mp3</i> para funcionar</p>
