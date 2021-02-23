@@ -7,15 +7,19 @@ while True:
     try:
         n = 0
         lst = []
-        for n in range(4):
-            al = input('Aluno {}: '.format(n + 1))
-            lst.append(al)
-            n += 1
-        r.shuffle(lst)
-        i = 0
-        for i in range(len(lst)):
-            print('O {}° aluno será: {}\nFim!'.format(i + 1, lst[i]))
-            i += 1
-        break
+        al = input('Aluno {}: '.format(n + 1))
+        if al != '':
+            for n in range(4):
+                lst.append(al)
+                n += 1
+            r.shuffle(lst)
+            i = 0
+            for i in range(len(lst)):
+                print('O {}° aluno será: {}\nFim!'.format(i + 1, lst[i]))
+                i += 1
+        else:
+            print('Dados inválidos!\nFim!')
+            break
     except:
         print('Dados inválidos!')
+    break
