@@ -22,18 +22,27 @@ while True:
         if 1 <= opcao <= 3:
             st = randint(1, 3)
             if st == 1:
-                esc = 'Pedra'
+                cm = 'Pedra'
             elif st == 2:
-                esc = 'Papel'
+                cm = 'Papel'
             else:
-                esc = 'Tesoura'
+                cm = 'Tesoura'
+
+            if opcao == 1:
+                jg = 'Pedra'
+            elif opcao == 2:
+                jg = 'Papel'
+            else:
+                jg = 'Tesoura'
+
             print('Pedra')
             sleep(1)
             print('Papel')
             sleep(1)
             print('Tesoura...')
             sleep(1)
-            print(f'\nJoguei >>> {esc}')
+            print(f'\nJoguei >>> {cm}')
+            print(f'Você jogou >>> {jg}')
             if opcao == st:
             # computador e jogador ecolheram a mesma opcao
                 print(f'Empate!!!{emoji.emojize(":neutral_face:", use_aliases=True)}')
